@@ -85,6 +85,10 @@ sed -i "s|.*ZSH_THEME=.*|ZSH_THEME=spaceship|g" $HOME/.zshrc
 ```bash
 source ~/.zshrc
 ```
+### install Dracula Theme
+```
+pip3 install --install-option="--themes=all" pycritty
+```
 
 ### install tmux
 
@@ -97,7 +101,8 @@ sh autogen.sh
 
 ### Configure tmux
 
-```bash
+```pycritty --size 10
+bash
 cd
 git clone https://github.com/gpakosz/.tmux.git
 ln -s -f .tmux/.tmux.conf
